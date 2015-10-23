@@ -7,7 +7,7 @@ module.exports = function(method, opts) {
 
 var msg = {
 	'invite': 
-				'INVITE sip:5753606@10.1.10.1 SIP/2.0\r\n' +
+				'INVITE sip:5753606;context=private@10.1.10.1 SIP/2.0\r\n' +
 				'Via: SIP/2.0/UDP 10.1.10.101;branch=z9hG4bKac619477600\r\n' +
 				'Via: SIP/2.0/UDP 10.1.10.103;branch=z9hG4bKac6194382828\r\n' +
 				'Max-Forwards: 70\r\n' +
@@ -19,6 +19,7 @@ var msg = {
 				'Supported: em,timer,replaces,path,resource-priority,sdp-anat\r\n' +
 				'Allow: REGISTER,OPTIONS,INVITE,ACK,CANCEL,BYE,NOTIFY,PRACK,REFER,INFO,SUBSCRIBE,UPDATE\r\n' +
 				'User-Agent: Audiocodes-Sip-Gateway-Mediant 1000/v.5.80A.055.002\r\n' +
+				'P-Asserted-Identity: "Dave Horton<sip:4083084809;context=private>@10.1.0.2\r\n' +
 				'Content-Type: application/sdp\r\n' +
 				'Content-Length: 173\r\n' +
 				'\r\n' +
