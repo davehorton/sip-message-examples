@@ -31,7 +31,7 @@ var msg = {
 				'm=audio 6010 RTP/AVP 0\r\n' +
 				'a=rtpmap:0 PCMU/8000\r\n' +
 				'a=ptime:20\r\n' +
-				'a=sendrecv\r\n', 
+				'a=sendrecv', 
 
 	'invite-compact': 
 				'INVITE sip:5753606@10.1.10.1 SIP/2.0\r\n' +
@@ -57,7 +57,7 @@ var msg = {
 				'm=audio 6010 RTP/AVP 0\r\n' +
 				'a=rtpmap:0 PCMU/8000\r\n' +
 				'a=ptime:20\r\n' +
-				'a=sendrecv\r\n', 
+				'a=sendrecv', 
 			
 	'200ok': 'SIP/2.0 200 OK\r\n'+
 	      'Via: SIP/2.0/UDP 10.1.10.3;rport;branch=z9hG4bK94U4tm2DStvvH;received=10.1.10.3\r\n' +
@@ -81,7 +81,7 @@ var msg = {
 				'm=audio 8108 RTP/AVP 0\r\n' +
 				'a=rtpmap:0 PCMU/8000\r\n' +
 				'a=silenceSupp:off - - - -\r\n' +
-				'a=ptime:20\r\n',
+				'a=ptime:20',
 
 		'siprec': 
 				'INVITE sip:SIPREC-SRS@172.16.193.134:5030 SIP/2.0\r\n' +
@@ -178,5 +178,5 @@ var msg = {
 				'<tns:send>ZjExNDNiMDQtNjk1MS0xMA==</tns:send>\r\n' +
 				'<tns:recv>ZjExNDNiMDUtNjk1MS0xMA==</tns:recv>\r\n' +
 				'</tns:participantstreamassoc>\r\n' +
-				'</tns:recording>\r\n'
+				'</tns:recording>'
 } ;
