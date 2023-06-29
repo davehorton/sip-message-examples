@@ -6,7 +6,7 @@ module.exports = function(method, opts) {
 
 
 var msg = {
-	'invite': 
+	'invite':
 				'INVITE sip:5753606;context=private@10.1.10.1 SIP/2.0\r\n' +
 				'Via: SIP/2.0/UDP 10.1.10.101;branch=z9hG4bKac619477600\r\n' +
 				'Via: SIP/2.0/UDP 10.1.10.103;branch=z9hG4bKac6194382828\r\n' +
@@ -31,7 +31,7 @@ var msg = {
 				'm=audio 6010 RTP/AVP 0\r\n' +
 				'a=rtpmap:0 PCMU/8000\r\n' +
 				'a=ptime:20\r\n' +
-				'a=sendrecv', 
+				'a=sendrecv',
 
 		'invite-tls':
 				'INVITE sips:5753606;context=private@10.1.10.1 SIP/2.0\r\n' +
@@ -60,7 +60,7 @@ var msg = {
 				'a=ptime:20\r\n' +
 				'a=sendrecv',
 
-	'invite-compact': 
+	'invite-compact':
 				'INVITE sip:5753606@10.1.10.1 SIP/2.0\r\n' +
 				'v: SIP/2.0/UDP 10.1.10.101;branch=z9hG4bKac619477600\r\n' +
 				'v: SIP/2.0/UDP 10.1.10.103;branch=z9hG4bKac6194382828\r\n' +
@@ -84,8 +84,8 @@ var msg = {
 				'm=audio 6010 RTP/AVP 0\r\n' +
 				'a=rtpmap:0 PCMU/8000\r\n' +
 				'a=ptime:20\r\n' +
-				'a=sendrecv', 
-			
+				'a=sendrecv',
+
 	'200ok': 'SIP/2.0 200 OK\r\n'+
 	      'Via: SIP/2.0/UDP 10.1.10.3;rport;branch=z9hG4bK94U4tm2DStvvH;received=10.1.10.3\r\n' +
 				'Call-ID: 5eb456f6-7ea4-122f-8785-001143e3cdf2\r\n' +
@@ -110,7 +110,7 @@ var msg = {
 				'a=silenceSupp:off - - - -\r\n' +
 				'a=ptime:20',
 
-		'siprec': 
+		'siprec':
 				'INVITE sip:SIPREC-SRS@172.16.193.134:5030 SIP/2.0\r\n' +
 				'Via: SIP/2.0/UDP 172.16.169.181:5060;branch=z9hG4bK04B0013f3db3e67f3b7\r\n' +
 				'From: "SIPREC-SRC" <sip:SIPREC-SRC@172.16.169.181>;tag=gK040028ac\r\n' +
@@ -207,7 +207,7 @@ var msg = {
 				'</tns:participantstreamassoc>\r\n' +
         '</tns:recording>',
 
-        'siprec2': 
+        'siprec2':
 				'INVITE sip:SIPREC-SRS@172.16.193.134:5030 SIP/2.0\r\n' +
 				'Via: SIP/2.0/UDP 172.16.169.181:5060;branch=z9hG4bK04B0013f3db3e67f3b7\r\n' +
 				'From: "SIPREC-SRC" <sip:SIPREC-SRC@172.16.169.181>;tag=gK040028ac\r\n' +
@@ -399,5 +399,16 @@ var msg = {
 				'<tns:send>ZjExNDNiMDQtNjk1MS0xMA==</tns:send>\r\n' +
 				'<tns:recv>ZjExNDNiMDUtNjk1MS0xMA==</tns:recv>\r\n' +
 				'</tns:participantstreamassoc>\r\n' +
-				'</tns:recording>'
+				'</tns:recording>',
+		'options-carriage-return': 'OPTIONS sip:mgAUQnkm@3.208.209.143 SIP/2.0\r\n' +
+				'Via: SIP/2.0/UDP 192.241.212.6:56500;branch=nGTWdf.1124599842;rport;alias\r\n' +
+				'From: sip:OYlmFAQc@192.241.212.6:56500;tag=71186921\r\n' +
+				'To: sip:RTGYLGsX@3.208.209.143\r\n' +
+				'Call-ID: 3652223354@192.241.212.6\r\n' +
+				'CSeq: 1 OPTIONS\r\n' +
+				'Contact: sip:IDwgWVsn@192.241.212.6:56500\r\n' +
+				'Content-Length: 0\r\n' +
+				'Max-Forwards: 20\r\n' +
+				'User-Agent: wFkdhplQ\r\n' +
+				'Accept: text/plain\r\n'
 } ;
